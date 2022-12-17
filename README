@@ -1,0 +1,67 @@
+This directory contains the v. 1.0.0 release of Aiwass.
+
+This is the first release of the source code in any form.
+
+Aiwass was originally written by S. Hill on MS-DOS in Microsoft C 5.0. This
+initial snapshot contains the source code as of Dec 21 1993 with minimal
+changes, primarily the addition of the GNU GPL licensing notices.
+
+As I no longer have a working MS C 5.0 environent, I am unable to verify that
+the code AS-IS will compile. However, it should take minimal effort to get it
+working on DOS or Windows from this snapshot. The main issues will be in
+regard to the system include files and the location of the configration
+files, which will likely need to be moved into working directory from the
+subdirectory 'config'.
+
+This project intends to update to code to run on modern Linux systems. Please
+fork the project if you wish to develop and maintain a Windows version.
+
+
+Documentation
+-------------
+
+Aiwass v. 1 did not include any documentation beyond the comments in the
+code. Please feel free to contribute documentation to this project.
+
+That said, the first thing one needs to do after getting the code running
+is to import the dictionary files (which are located in the 'dictionaries'
+directory) and create the lexicon and numicon files. For some reason that
+I don't recall, the Hebrew dictionary is broken into 5 files. Once these
+dictionaries are imported, the lexicon is stored in the file 'aiwass.lex'.
+
+Aiwass is capable of maintaining multiple numicon files, once the lexicon
+is indexed. The numicon files have names in the form <language>.<key>. My
+working DOS binaries are using the following numicon files:
+
+    english.brt     English indexed using English Qaballa (british.key)
+    english.eng     English indexed using the AREXZ 1496 key (english.key)
+    english.grk     English indexed using the Greek key (greek.key)
+    english.heb     English indexed using the Hebrew key (hebrew.key)
+    greek.grk       Greek indexed using isopsephy (greek.key)
+    hebrew.heb      Hebrew indexed using gematria (hebrew.key)
+
+Aiwass includes additional keys for Arabic, Coptic, Enochian, and Latin,
+but does not include dictionaries for these languages. These keys can be
+used to index the lexicon of any language, though the most  common use
+will be to create additional numicons for English.
+
+That should be enough information to get started. Good luck!
+
+
+-----------------------------------------------------------------------------
+Copyright (C) 2022 Skye Love Hill.
+
+This file is part of Aiwass.
+
+Aiwass is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Aiwass is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+Aiwass. If not, see <https://www.gnu.org/licenses/>.
