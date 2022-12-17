@@ -9,12 +9,12 @@ changes, primarily the addition of the GNU GPL licensing notices.
 As I no longer have a working MS C 5.0 environent, I am unable to verify that
 the code AS-IS will compile. However, it should take minimal effort to get it
 working on DOS or Windows from this snapshot. The main issues will be in
-regard to the system include files and the location of the configration
+regard to the system include files and the location of the configuration
 files, which will likely need to be moved into working directory from the
 subdirectory 'config'.
 
 This project intends to update to code to run on modern Linux systems. Please
-fork the project if you wish to develop and maintain a Windows version.
+fork the code if you wish to develop and maintain a Windows version.
 
 
 Documentation
@@ -42,7 +42,7 @@ working DOS binaries are using the following numicon files:
 
 Aiwass includes additional keys for Arabic, Coptic, Enochian, and Latin,
 but does not include dictionaries for these languages. These keys can be
-used to index the lexicon of any language, though the most  common use
+used to index the lexicon of any language, though the most common use
 will be to create additional numicons for English.
 
 That should be enough information to get started. Good luck!
